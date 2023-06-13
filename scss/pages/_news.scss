@@ -1,0 +1,47 @@
+.news-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
+    margin-top: 50px;
+
+    .news-box{
+        height: 400px;
+        width: 300px;
+        text-align: center;
+
+        p{
+            font-size: 1.2rem;
+        }
+
+    }
+}
+
+// ========= MOBILE =========
+
+@media (min-width: 375px) and (max-width: 768px){
+    *{
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    .news-container{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 4, 1fr;
+        height: auto;
+    }
+}
+
+// =============== TABLET ============
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .news-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        height: auto;
+        justify-items: center;
+    }
+}

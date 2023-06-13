@@ -1,0 +1,100 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    padding: 5px 10%;
+    background-color: $header-color;
+    width: auto;
+
+
+    .banquito{
+        padding-top: 15px;
+        padding-left: 15px;
+    }
+
+    .nav-links {
+        list-style: none;
+
+        a{
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        li {
+            display: inline-block;
+            padding: 0 20px;
+
+                &:hover {
+                    transform: scale(1.2);
+                    transition: all 0.3s;
+                }
+        }
+    }
+
+    .logo {
+        cursor: pointer;
+
+        img {
+            height: 70px;
+        width: auto;
+        transition: all 0.3s;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+
+    .boton {
+        button {
+            font-weight: 700;
+        padding: 5px 15px;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+        background-color: sandybrown;
+
+            &:hover {
+                background-color: sandybrown;
+                transform: scale(1.2);
+        }
+    }
+}}
+
+
+@media (min-width: 375px) and (max-width: 768px){
+    
+    *{
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    .header{
+        display: block;
+        width: auto;
+        height: auto;
+        text-align: center;
+
+
+    }
+
+    .nav-links{
+        margin-bottom: 5px;
+    }
+
+    .logo{
+        margin-bottom: -50px;
+    }
+    
+    h1{
+        font-size: 2rem;
+        margin-right: 40px;
+        margin-top: 10%;
+    }
+}
+
+// =============== TABLET ============

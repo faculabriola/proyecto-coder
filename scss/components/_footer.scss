@@ -1,0 +1,35 @@
+.footer{
+    background-color: #333;
+    bottom: 0;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-left: 50px;
+    margin-top: 50px;
+    position: relative;
+
+    h2 {
+        color: white;
+    }
+
+    h3{
+        color: white;
+    }
+
+    p{
+        color: white;
+    }
+
+    .footer-links{
+        padding-left: 50px;
+        a {
+            color: white;
+        }
+    }
+}
+
+
+@media (min-width: 375px) and (max-width: 768px){
+    
+}

@@ -1,0 +1,13 @@
+.contact-us-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 440px;
+
+    .contact-email{
+        display: block;
+        
+        justify-content: center;
+        align-items: center;
+    }
+}
