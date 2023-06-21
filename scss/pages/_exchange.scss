@@ -1,18 +1,28 @@
-.container {
+.exchange-title{
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+.container-exchange {
     display: flex;
     justify-content: space-around;
     margin: 20px;
 
-.currency-card {
+    .currency-card {
     
-    padding: 20px;
-    width: 200px;
-    text-align: center;
-    line-height: 50px;
-    height: 400px;
+        padding: 20px;
+        width: 200px;
+        text-align: center;
+        line-height: 50px;
+        height: 400px;
+        background-color: sandybrown;
+        padding-bottom: 60px;
 
-    h2{
+    h4{
             color: black;
+            font-size: 1.5rem;
     }
 }
 }
@@ -26,7 +36,7 @@
         
     }
 
-    .container{
+    .container-exchange{
         display: grid;
         width: auto;
         justify-content: center;
@@ -40,7 +50,7 @@
 // =============== TABLET ============
 
 @media (min-width: 768px) and (max-width: 1024px){
-    .container{
+    .container-exchange{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);

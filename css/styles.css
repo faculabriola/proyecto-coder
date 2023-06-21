@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Poppins:wght@400;500;600;700&display=swap");
 body {
   background-color: antiquewhite;
   height: 111vh;
@@ -18,6 +19,11 @@ h1 {
   color: white;
   font-size: 40px;
   margin-left: 50px;
+}
+
+.main-membership {
+  font-family: "Castoro Titling", cursive;
+  font-family: "Poppins", sans-serif;
 }
 
 .header {
@@ -86,10 +92,10 @@ h1 {
     text-align: center;
   }
   .nav-links {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
   .logo {
-    margin-bottom: -50px;
+    margin-bottom: -35px;
   }
   h1 {
     font-size: 2rem;
@@ -211,16 +217,30 @@ h1 {
   color: white;
 }
 .footer .footer-links {
-  padding-left: 50px;
+  padding-left: 5px;
+  padding-bottom: 10px;
 }
-.footer .footer-links a {
+.footer .footer-links .footer-media a {
+  display: inline-block;
+  background-color: grey;
+  border-radius: 50px;
+  line-height: 40px;
+  width: 40px;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+.footer .footer-links .footer-media a:hover {
+  background-color: sandybrown;
+}
+.footer a {
   color: white;
 }
 
 .manager-title {
   display: flex;
   justify-content: center;
-  color: #333;
+  color: black;
+  font-size: 2rem;
 }
 
 .managers-container {
@@ -255,20 +275,29 @@ h1 {
     grid-template-rows: repeat(2, 1fr);
   }
 }
-.container {
+.exchange-title {
+  color: black;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.container-exchange {
   display: flex;
   justify-content: space-around;
   margin: 20px;
 }
-.container .currency-card {
+.container-exchange .currency-card {
   padding: 20px;
   width: 200px;
   text-align: center;
   line-height: 50px;
   height: 400px;
+  background-color: sandybrown;
+  padding-bottom: 60px;
 }
-.container .currency-card h2 {
+.container-exchange .currency-card h4 {
   color: black;
+  font-size: 1.5rem;
 }
 
 @media (min-width: 375px) and (max-width: 768px) {
@@ -276,18 +305,18 @@ h1 {
     margin: 0;
     padding: 0;
   }
-  .container {
+  .container-exchange {
     display: grid;
     width: auto;
     justify-content: center;
     text-align: center;
   }
-  .container .currency-card {
+  .container-exchange .currency-card {
     height: 300px;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  .container {
+  .container-exchange {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -296,6 +325,12 @@ h1 {
     padding-bottom: 100px;
   }
 }
+.news-title {
+  color: black;
+  font-size: 2rem;
+  text-align: center;
+}
+
 .news-container {
   display: flex;
   justify-content: space-around;
@@ -361,23 +396,109 @@ h1 {
   align-items: center;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  .news-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    height: auto;
-    justify-items: center;
+.membership-main {
+  background-color: white;
+  margin-top: 10px;
+  margin-bottom: -40px;
+  font-family: "Castoro Titling", cursive;
+  font-family: "Poppins", sans-serif;
+}
+
+.membership-containers {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.membership-containers img {
+  width: 50vw;
+}
+.membership-containers .membership-text {
+  align-self: center;
+}
+.membership-containers .membership-text p {
+  font-size: 1.6rem;
+}
+
+@media (min-width: 375px) and (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
   }
-  .info-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+  .membership-transfer {
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .membership-transfer .membership-containers {
+    display: block;
+    text-align: center;
+  }
+  .membership-transfer .membership-containers .membership-text p {
+    font-size: 1.5rem;
+  }
+  .membership-transfer .membership-containers .membership-img img {
+    width: 95vw;
+  }
+  .membership-savings {
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .membership-savings .membership-containers {
+    display: block;
+    text-align: center;
+  }
+  .membership-savings .membership-containers .membership-text p {
+    font-size: 1.5rem;
+  }
+  .membership-savings .membership-containers .membership-img img {
+    width: 95vw;
+  }
+  .membership-finance {
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .membership-finance .membership-containers {
+    display: block;
+    text-align: center;
+  }
+  .membership-finance .membership-containers .membership-text p {
+    font-size: 1.5rem;
+  }
+  .membership-finance .membership-containers .membership-img img {
+    width: 95vw;
+  }
+  .membership-investor {
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .membership-investor .membership-containers {
+    display: block;
+    text-align: center;
+  }
+  .membership-investor .membership-containers .membership-text p {
+    font-size: 1.5rem;
+  }
+  .membership-investor .membership-containers .membership-img img {
+    width: 95vw;
+  }
+  .membership-invest {
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .membership-invest .membership-containers {
+    display: block;
+    text-align: center;
     width: auto;
-    height: auto;
-    justify-items: center;
-    align-items: center;
-    margin-top: -100px;
+  }
+  .membership-invest .membership-containers .membership-text p {
+    font-size: 1.5rem;
+  }
+  .membership-invest .membership-containers .membership-img img {
+    width: 95vw;
   }
 }
 

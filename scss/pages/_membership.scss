@@ -1,0 +1,158 @@
+
+.membership-main{
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: -40px;
+    font-family: 'Castoro Titling', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.membership-containers{
+    display: flex;
+    
+    text-align: center;
+    justify-content: center;
+
+    img{
+        width: 50vw;
+    }
+
+    .membership-text{
+        align-self: center;
+
+        p{
+            font-size: 1.6rem;
+        }
+    }
+}
+
+
+
+@media (min-width: 375px) and (max-width: 768px){
+    *{
+        margin: 0;
+        padding: 0;
+        
+    } 
+
+
+    .membership-transfer{
+        margin-top: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        .membership-containers{
+            display: block;
+            text-align: center;
+
+            .membership-text{
+                p{
+                    font-size: 1.5rem;
+                }
+            }
+            
+            .membership-img{
+                img{
+                width: 95vw;
+                }
+            }
+        }
+    }
+
+    .membership-savings{
+        margin-top: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        .membership-containers{
+            display: block;
+            text-align: center;
+
+            .membership-text{
+                p{
+                    font-size: 1.5rem;
+                }
+            }
+            
+            .membership-img{
+                img{
+                width: 95vw;
+                }
+            }
+        }
+    }
+
+    .membership-finance{
+        margin-top: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        .membership-containers{
+            display: block;
+            text-align: center;
+
+            .membership-text{
+                p{
+                    font-size: 1.5rem;
+                }
+            }
+            
+            .membership-img{
+                img{
+                width: 95vw;
+                }
+            }
+        }
+    }
+
+    .membership-investor{
+        margin-top: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+        
+        .membership-containers{
+            display: block;
+            text-align: center;
+
+
+            .membership-text{
+                p{
+                    font-size: 1.5rem;
+                }
+            }
+            
+            .membership-img{
+                img{
+                width: 95vw;
+                }
+            }
+        }
+    }
+
+    .membership-invest{
+        padding-top: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+        
+        .membership-containers{
+            display: block;
+            text-align: center;
+            width: auto;
+
+
+            .membership-text{
+                p{
+                    font-size: 1.5rem;
+                }
+            }
+            
+            .membership-img{
+                img{
+                width: 95vw;
+                }
+            }
+        }
+    }
+} 
